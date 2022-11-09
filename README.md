@@ -191,3 +191,54 @@ Image credit goes to [Kaz S](https://github.com/kshinoz98/CircuitPython#evidence
 Image credit goes to [Kaz S](https://github.com/kshinoz98/CircuitPython#wiring-1)
 ### Reflection
 This assignment was challenging for me, because of the time it took to map the sensor. It also took a while to make the led work with the buttons. This assignment was good, because it taught me how to count down with another button, which I have never done before. The last part I struggled with, was finding the right amount of time between each button push. If the time was too short, then the numbers would go up twice when I pressed once. But if the time was too long, then the next time I pressed the button, the button wouldn't be registered. 
+
+
+
+## CircuitPython_LCD
+
+### Description & Code
+
+```python
+import board
+import math
+import time
+from lcd.lcd import LCD                                     
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface   
+from digitalio import DigitalInOut, Direction, Pull
+i2c = board.I2C()
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)
+btn = DigitalInOut(board.D3)
+btn2 = DigitalInOut(board.D2)
+btn.direction = Direction.INPUT
+btn2.direction = Direction.INPUT
+btn.pull = Pull.UP
+btn2.pull = Pull.UP
+num = 0                     
+Redo = True                   
+
+lcd.print("Starting")
+while True:                                 
+    if btn.value == True and Redo == True:   
+        if btn2.value == True:                     
+            num = num - 1
+        else:
+            num = num + 1                                   
+        lcd.clear()
+        lcd.print(str(num))
+        Redo = False
+        time.sleep(.1)
+    elif btn.value == False and Redo == False:
+        Redo = True
+
+```
+Code from [Kaz S](https://github.com/kshinoz98/CircuitPython#description--code-2)
+### Evidence
+
+
+
+### Wiring
+![2222](https://user-images.githubusercontent.com/112961430/200873816-817fa4d7-c342-4601-816c-1a7b69553254.PNG)
+
+Image credit goes to [google](https://tinyurl.com/45jm7wwn)
+### Reflection
+
