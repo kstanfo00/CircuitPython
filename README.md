@@ -237,7 +237,7 @@ Code from [Kaz S](https://github.com/kshinoz98/CircuitPython#description--code-2
 ## MotorControl
 
 ### Description & Code
-This assignment was our intro assignment to circuitpython. Our job was to get the neopixel to blink and change colors. 
+This assignment 
 ### Evidence
 
 
