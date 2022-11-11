@@ -6,6 +6,7 @@ This repository will actually serve as a aid to help you get started with your o
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [CircuitPython_DistanceSensor](#CircuitPython_DistanceSensor)
 * [CircuitPython_LCD](#CircuitPython_LCD)
+* [MotorControl](#MotorControl)
 ---
 
 ## Hello_CircuitPython
@@ -232,6 +233,11 @@ while True:
 
 ```
 Code from [Kaz S](https://github.com/kshinoz98/CircuitPython#description--code-2)
+
+## MotorControl
+
+### Description & Code
+This assignment was our intro assignment to circuitpython. Our job was to get the neopixel to blink and change colors. 
 ### Evidence
 
 
