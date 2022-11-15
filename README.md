@@ -237,14 +237,11 @@ Code from [Kaz S](https://github.com/kshinoz98/CircuitPython#description--code-2
 ## MotorControl
 
 ### Description & Code
-This assignment 
+This assignment was to wire a 6 volt battery pack to a motor, and code the motor to speed up or slow down with a potentiometer. 
 ### Evidence
-
-
-
+https://user-images.githubusercontent.com/112961430/201939869-76edb460-2b1b-4d08-89ad-654778561698.mp4
 ### Wiring
 ![2222](https://user-images.githubusercontent.com/112961430/200873816-817fa4d7-c342-4601-816c-1a7b69553254.PNG)
-
 Image credit goes to [google](https://tinyurl.com/45jm7wwn)
 ### Reflection
-
+This assignment's hardest part was the wiring, because how I needed to use 4 lanes of gnd and 5v on my breadboard, instead of the usual 2 lanes. Another hard part of this assignment, was the wiring of the transistor. I didn't really know how to wire it, until after this assignment. My favorite part of the assignment, was seeing the motor's speed changing when I finished. 
