@@ -7,6 +7,7 @@ This repository will actually serve as a aid to help you get started with your o
 * [CircuitPython_DistanceSensor](#CircuitPython_DistanceSensor)
 * [CircuitPython_LCD](#CircuitPython_LCD)
 * [MotorControl](#MotorControl)
+* [TemperatureSensor](#TemperatureSensor)
 ---
 
 ## Hello_CircuitPython
