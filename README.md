@@ -277,7 +277,7 @@ Video credit goes to [Sofie Chen](https://github.com/sechen12/CircutPython#evide
 ### Reflection 
 This assignment was definetly the most annoying, because I had to wait until vscode would work with my lcd. The hardest part of the assignment was definetly the lcd. I had trouble connecting the lcd to the arduino and placing the sensors readings on it. My favorite part of the assignment was seeing it work. 
 
-## Rotary Encoder 
+## RotaryEncoder 
 
 ### Description & Code 
 In this assignment our objective was to create a menu-controlled traffic light using a 20 detent rotary encoder. 
