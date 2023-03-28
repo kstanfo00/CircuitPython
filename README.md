@@ -198,6 +198,21 @@ This assignment was challenging for me, because of the time it took to map the s
 
 ### Description & Code
 This assignment was to wire a 6 volt battery pack to a motor, and code the motor to speed up or slow down with a potentiometer. 
+```python 
+import simpleio
+import board
+import time
+from analogio import AnalogOut, AnalogIn
+
+motor = AnalogOut(board.A5) # assigning motor a pin
+pot = AnalogIn(board.A0) # assigning potentiometer a pin
+
+while True:
+    print(simpleio.map_range(pot.value, 96, 65520, 0, 65535))
+    motor.value = int(simpleio.map_range(pot.value, 96, 65520, 0, 65535)) # maps the motor value to the potentiometer
+    time.sleep(0.1)
+  ```
+  credit goes to [Sofie Chen](https://github.com/sechen12/CircutPython#description--code-4)
 ### Evidence
 https://user-images.githubusercontent.com/112961430/201939869-76edb460-2b1b-4d08-89ad-654778561698.mp4
 ### Wiring
@@ -254,6 +269,7 @@ while True:
 
 ### Wiring 
 ![image](https://user-images.githubusercontent.com/112961430/228250058-b6dfd8ab-b892-461c-b744-1fe0ca629b5e.png)
+
 Image credit goes to [Sofie Chen](https://github.com/sechen12/CircutPython#evidence-5)
 ### Reflection 
 This assignment was definetly the most annoying, because I had to wait until vscode would work with my lcd. The hardest part of the assignment was definetly the lcd. I had trouble connecting the lcd to the arduino and placing the sensors readings on it. My favorite part of the assignment was seeing it work. 
