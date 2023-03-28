@@ -266,11 +266,13 @@ while True:
     
     
 ### Evidence 
+https://user-images.githubusercontent.com/112961430/228257639-0ed277ac-6e27-421a-a1fa-9b5ca44c8bb7.mp4
 
+Image credit goes to [Sofie Chen](https://github.com/sechen12/CircutPython#evidence-5)
 ### Wiring 
 ![image](https://user-images.githubusercontent.com/112961430/228250058-b6dfd8ab-b892-461c-b744-1fe0ca629b5e.png)
 
-Image credit goes to [Sofie Chen](https://github.com/sechen12/CircutPython#evidence-5)
+Video credit goes to [Sofie Chen](https://github.com/sechen12/CircutPython#evidence-5)
 ### Reflection 
 This assignment was definetly the most annoying, because I had to wait until vscode would work with my lcd. The hardest part of the assignment was definetly the lcd. I had trouble connecting the lcd to the arduino and placing the sensors readings on it. My favorite part of the assignment was seeing it work. 
 
