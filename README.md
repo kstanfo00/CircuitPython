@@ -279,6 +279,9 @@ This assignment was definetly the most annoying, because I had to wait until vsc
 ## Rotary Encoder 
 
 ### Description & Code 
+In this assignment our objective was to create a menu-controlled traffic light using a 20 detent rotary encoder. 
+
+Description credit goes to [Anton Weder](https://github.com/aweder05/CircuitPython#description-1)
 ```python
 import time
 import rotaryio
@@ -357,3 +360,16 @@ while True:
         Buttonyep = 1
     last_position = position
 ```
+
+### Evidence 
+![trafficlight-min](https://user-images.githubusercontent.com/112961430/228264689-fae32f3e-31b3-44bc-af61-d02a80e1fa34.gif)
+
+Video credit goes to [Graham Gilbert-Schroeer](https://github.com/VeganPorkChop/Engineering-3-Documentation/tree/master/IntermediateCoding-Engineering%203#evidence-6)
+
+### Wiring 
+![image](https://user-images.githubusercontent.com/112961430/228265427-7d9c8d1a-c767-4665-927b-72bccb8578fc.png)
+
+Image credit goes to [Graham Gilbert-Schroeer](https://github.com/VeganPorkChop/Engineering-3-Documentation/tree/master/IntermediateCoding-Engineering%203#wiring-diagram-5)
+
+### Reflection
+This assignment was cool, because of how the led's lighted up. I didn't really have any problems with this assignment. My least favorite part of the assignment was the coding. It was the most mundane part of the assignment.
