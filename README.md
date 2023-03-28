@@ -211,7 +211,7 @@ This assignment's hardest part was the wiring, because how I needed to use 4 lan
 ### Description & Code 
 This assignment was to wire a temperature sensor with an lcd to show the temperature on the lcd.
 ```python
-ctrl alt r
+#ctrl alt r
 import board
 from lcd.lcd import LCD
 from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
@@ -247,7 +247,9 @@ while True:
     print("Temperature: {}C {}F".format(temp_C, temp_F))
     time.sleep(1.0)
     
-    ```
+ ```
+    
+    
 ### Evidence 
 
 ### Wiring 
