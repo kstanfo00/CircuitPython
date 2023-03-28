@@ -194,47 +194,6 @@ Image credit goes to [Kaz S](https://github.com/kshinoz98/CircuitPython#wiring-1
 ### Reflection
 This assignment was challenging for me, because of the time it took to map the sensor. It also took a while to make the led work with the buttons. This assignment was good, because it taught me how to count down with another button, which I have never done before. The last part I struggled with, was finding the right amount of time between each button push. If the time was too short, then the numbers would go up twice when I pressed once. But if the time was too long, then the next time I pressed the button, the button wouldn't be registered. 
 
-
-
-## CircuitPython_LCD
-
-### Description & Code
-
-```python
-import board
-import math
-import time
-from lcd.lcd import LCD                                     
-from lcd.i2c_pcf8574_interface import I2CPCF8574Interface   
-from digitalio import DigitalInOut, Direction, Pull
-i2c = board.I2C()
-lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)
-btn = DigitalInOut(board.D3)
-btn2 = DigitalInOut(board.D2)
-btn.direction = Direction.INPUT
-btn2.direction = Direction.INPUT
-btn.pull = Pull.UP
-btn2.pull = Pull.UP
-num = 0                     
-Redo = True                   
-
-lcd.print("Starting")
-while True:                                 
-    if btn.value == True and Redo == True:   
-        if btn2.value == True:                     
-            num = num - 1
-        else:
-            num = num + 1                                   
-        lcd.clear()
-        lcd.print(str(num))
-        Redo = False
-        time.sleep(.1)
-    elif btn.value == False and Redo == False:
-        Redo = True
-
-```
-Code from [Kaz S](https://github.com/kshinoz98/CircuitPython#description--code-2)
-
 ## MotorControl
 
 ### Description & Code
@@ -251,6 +210,44 @@ This assignment's hardest part was the wiring, because how I needed to use 4 lan
 
 ### Description & Code 
 This assignment was to wire a temperature sensor with an lcd to show the temperature on the lcd.
+```python
+ctrl alt r
+import board
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+import time
+import analogio
+
+lcdPower = digitalio.DigitalInOut(board.D8)
+lcdPower.direction = digitalio.Direction.INPUT
+lcdPower.pull = digitalio.Pull.DOWN
+
+TMP36_PIN = board.A0  # Analog input connected to TMP36 output.
+i2c = board.I2C()
+
+
+# Function to simplify the math of reading the temperature.
+def tmp36_temperature_C(analogin):
+    millivolts = analogin.value * (analogin.reference_voltage * 1000 / 65535)
+    return (millivolts - 500) / 10
+
+lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)
+# Create TMP36 analog input.
+tmp36 = analogio.AnalogIn(TMP36_PIN)
+
+# Loop forever.
+while True:
+    lcd.clear()
+    lcd.print("Klei")
+    # Read the temperature in Celsius.
+    temp_C = tmp36_temperature_C(tmp36)
+    # Convert to Fahrenheit.
+    temp_F = (temp_C * 9/5) + 32
+    # Print out the value and delay a second before looping again.
+    print("Temperature: {}C {}F".format(temp_C, temp_F))
+    time.sleep(1.0)
+    
+    ```
 ### Evidence 
 
 ### Wiring 
