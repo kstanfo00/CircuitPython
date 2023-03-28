@@ -246,3 +246,16 @@ https://user-images.githubusercontent.com/112961430/201939869-76edb460-2b1b-4d08
 Image credit goes to [google](https://tinyurl.com/45jm7wwn)
 ### Reflection
 This assignment's hardest part was the wiring, because how I needed to use 4 lanes of gnd and 5v on my breadboard, instead of the usual 2 lanes. Another hard part of this assignment, was the wiring of the transistor. I didn't really know how to wire it, until after this assignment. My favorite part of the assignment, was seeing the motor's speed changing when I finished. 
+
+##TemperatureSensor
+
+### Description & Code 
+This assignment was to wire a temperature sensor with an lcd to show the temperature on the lcd.
+### Evidence 
+
+### Wiring 
+![image](https://user-images.githubusercontent.com/112961430/228250058-b6dfd8ab-b892-461c-b744-1fe0ca629b5e.png)
+Image credit goes to [Sofie Chen](https://github.com/sechen12/CircutPython#evidence-5)
+### Reflection 
+This assignment was definetly the most annoying, because I had to wait until vscode would work with my lcd. The hardest part of the assignment was definetly the lcd. I had trouble connecting the lcd to the arduino and placing the sensors readings on it. My favorite part of the assignment was seeing it work. 
+
