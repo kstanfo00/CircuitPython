@@ -247,7 +247,7 @@ Image credit goes to [google](https://tinyurl.com/45jm7wwn)
 ### Reflection
 This assignment's hardest part was the wiring, because how I needed to use 4 lanes of gnd and 5v on my breadboard, instead of the usual 2 lanes. Another hard part of this assignment, was the wiring of the transistor. I didn't really know how to wire it, until after this assignment. My favorite part of the assignment, was seeing the motor's speed changing when I finished. 
 
-##TemperatureSensor
+## TemperatureSensor
 
 ### Description & Code 
 This assignment was to wire a temperature sensor with an lcd to show the temperature on the lcd.
