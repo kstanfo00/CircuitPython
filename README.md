@@ -471,4 +471,4 @@ Evidence goes to [Grant](https://github.com/ggastin30/CPython#evidence-7)
 
 Image credit from [Grant](https://github.com/ggastin30/CPython#wiring-7)
 ### Reflection 
- This assignment wasn't very difficult on the wiring side of it, but the code took the longest. I had to fix the 
+ This assignment wasn't very difficult on the wiring side of it, but the code took the longest. I had to fix the "if state" part the most, because it has the most errors for me. I would have saved much more time if I realized my button wasn't working in the first place. 
